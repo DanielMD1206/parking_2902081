@@ -44,7 +44,7 @@ public class Main {
         Register register1 = new Register(sDate, sTime, eDate1, eTime1, 5000L, slot2, customer2.myVehicles.get(0), customer2);
 
         //CREAR REGISTRO DE E/S 2
-        Register register2 = new Register(sDate, sTime, eDate2, eTime2, 5000L, slot2, customer1.myVehicles.get(0), customer1);
+        Register register2 = new Register(sDate, sTime, eDate2, eTime2, 5000L, slot1, customer1.myVehicles.get(0), customer1);
         myRegisters.add(register1);
         myRegisters.add(register2);
 
@@ -53,6 +53,7 @@ public class Main {
             System.out.println("---------------------------------------------------------------");
             System.out.println("Cliente: " + r.customer.name + " | " + r.customer.lastName + "");
             System.out.println("Vehiculo: " + r.vehicle.vehicleType + " | placa : " + r.vehicle.plate);
+            System.out.println("Parqueadero: " + r.slot.slot);
             System.out.println("Fecha de inicio: " +r.starDate + "\nHora de inicio: " + r.starTime);
             System.out.println("Fecha de salida: " + r.endDate + "\nHora de salida: " + r.endTime);
             System.out.println("---------------------------------------------------------------");
