@@ -14,6 +14,7 @@ public class Register {
     //ATRIBUTOS DE RELACION
     public Slot slot;
     public Vehicle vehicle;
+    public Employee employee;
     public Customer customer;
 
     //CONTRUCTOR 
@@ -21,7 +22,7 @@ public class Register {
     }
 
     public Register(LocalDate starDate, LocalTime starTime, LocalDate endDate, LocalTime endTime, Long cost, Slot slot,
-            Vehicle vehicle, Customer customer) {
+            Vehicle vehicle, Employee employee, Customer customer) {
         this.starDate = starDate;
         this.starTime = starTime;
         this.endDate = endDate;
@@ -30,6 +31,7 @@ public class Register {
         this.slot = slot;
         this.vehicle = vehicle;
         this.customer = customer;
+        this.employee = employee;
     }
 
 }
